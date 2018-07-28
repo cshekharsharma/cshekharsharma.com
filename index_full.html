@@ -9,6 +9,10 @@
     <link rel="preload" href="/assets/css/style.min.css" as="style" onload="this.rel='stylesheet'">
   </head>
   <body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+    <div class="preload">
+      <img src="/assets/img/loader.gif">
+    </div>
+    <div id="supercontainer" class="m-p-0">
     <div class="navbar custom-navbar navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header"><button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon icon-bar"></span><span class="icon icon-bar"></span><span class="icon icon-bar"></span></button><a href="/" class="navbar-brand"><span class="font-playfair">cshekhar</span>sharma</a></div>
@@ -57,46 +61,55 @@
     </section>
     <section id="contact" class="parallax-section" style="background-position: 50% -262px;">
       <div class="container">
-      <div class="row">
-        <div class="col-md-12 col-sm-12">
-          <div class="section-title">
-            <h2>Contact</h2>
-          </div>
-          <div class="col-md-offset-1 col-md-10 col-sm-12">
-            <div class="wow fadeInUp contact-form animated" data-wow-delay="1s" style="visibility: visible; animation-delay: 1s; animation-name: fadeInUp;">
-              <form action="#" method="post">
-                <div class="col-md-6 col-sm-6"><input type="text" class="form-control" placeholder="Name" required autocomplete="off"></div>
-                <div class="col-md-6 col-sm-6"><input type="email" class="form-control" placeholder="Email" required></div>
-                <div class="col-md-12 col-sm-12"><textarea class="form-control" row="5" placeholder="Message" required></textarea></div>
-                <div class="row">
-                  <div class="col-md-4 col-sm-4 pull-right"><button class="btnSub form-control"><i class="m-r-10 fa fa-send"></i>Send Message</button></div>
-                </div>
-              </form>
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+            <div class="section-title">
+              <h2>Contact</h2>
+            </div>
+            <div class="col-md-offset-1 col-md-10 col-sm-12">
+              <div class="wow fadeInUp contact-form animated" data-wow-delay="1s" style="visibility: visible; animation-delay: 1s; animation-name: fadeInUp;">
+                <form action="#" method="post">
+                  <div class="col-md-6 col-sm-6"><input type="text" class="form-control" placeholder="Name" required autocomplete="off"></div>
+                  <div class="col-md-6 col-sm-6"><input type="email" class="form-control" placeholder="Email" required></div>
+                  <div class="col-md-12 col-sm-12"><textarea class="form-control" row="5" placeholder="Message" required></textarea></div>
+                  <div class="row">
+                    <div class="col-md-4 col-sm-4 pull-right"><button class="btnSub form-control"><i class="m-r-10 fa fa-send"></i>Send Message</button></div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div>
+              <a target="_blank" href="mailto:shekharsharma705@gmail.com">
+                <div style="display:inline-block;width:100px;margin:10px;" class="mail button-big"><i class="fa fa-envelope"></i></div>
+              </a>
+              <a target="_blank" href="https://www.linkedin.com/in/cshekharsharma">
+                <div style="display:inline-block;width:100px;margin:10px;" class="linkedin button-big"><i class="fa fa-linkedin"></i></div>
+              </a>
+              <a target="_blank" href="https://github.com/cshekharsharma">
+                <div style="display:inline-block;width:100px;margin:10px;" class="github button-big"><i class="fa fa-github"></i></div>
+              </a>
+              <a target="_blank" href="https://www.twitter.com/cshekhar_sharma">
+                <div style="display:inline-block;width:100px;margin:10px;" class="twitter button-big"><i class="fa fa-twitter"></i></div>
+              </a>
+              <a target="_blank" href="https://www.facebook.com/cshekhar.sharma">
+                <div style="display:inline-block;width:100px;margin:10px;" class="facebook button-big"><i class="fa fa-facebook"></i></div>
+              </a>
+              <a target="_blank" href="https://www.quora.com/profile/Chandra-Shekhar-Sharma-2">
+                <div style="display:inline-block;width:100px;margin:10px;" class="quora button-big"><i class="fa fa-quora"></i></div>
+              </a>
             </div>
           </div>
-          <div>
-            <a target="_blank" href="mailto:shekharsharma705@gmail.com">
-              <div style="display:inline-block;width:100px;margin:10px;" class="mail button-big"><i class="fa fa-envelope"></i></div>
-            </a>
-            <a target="_blank" href="https://www.linkedin.com/in/cshekharsharma">
-              <div style="display:inline-block;width:100px;margin:10px;" class="linkedin button-big"><i class="fa fa-linkedin"></i></div>
-            </a>
-            <a target="_blank" href="https://github.com/cshekharsharma">
-              <div style="display:inline-block;width:100px;margin:10px;" class="github button-big"><i class="fa fa-github"></i></div>
-            </a>
-            <a target="_blank" href="https://www.twitter.com/cshekhar_sharma">
-              <div style="display:inline-block;width:100px;margin:10px;" class="twitter button-big"><i class="fa fa-twitter"></i></div>
-            </a>
-            <a target="_blank" href="https://www.facebook.com/cshekhar.sharma">
-              <div style="display:inline-block;width:100px;margin:10px;" class="facebook button-big"><i class="fa fa-facebook"></i></div>
-            </a>
-            <a target="_blank" href="https://www.quora.com/profile/Chandra-Shekhar-Sharma-2">
-              <div style="display:inline-block;width:100px;margin:10px;" class="quora button-big"><i class="fa fa-quora"></i></div>
-            </a>
-          </div>
         </div>
-      </div>
     </section>
+    </div>
   </body>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script><script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script><script>WebFont.load({google:{families: ['Playfair+Display:400,700', 'Source+Sans+Pro:400,600,700']},custom:{families: ['FontAwesome'],urls: ['//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css']}});</script><script src="/assets/js/smoothscroll.js"></script><script type="text/javascript">var scroll=new SmoothScroll('a[href*="#"]');</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    $( document ).ready(function() {
+     $(".preload").fadeOut(1500, function() {
+      $(".supercontainer").fadeIn(500);        
+    });
+    });
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script><script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script><script>WebFont.load({google:{families: ['Playfair+Display:400,700', 'Source+Sans+Pro:400,600,700']},custom:{families: ['FontAwesome'],urls: ['//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css']}});</script><script src="/assets/js/smoothscroll.js"></script><script type="text/javascript">var scroll=new SmoothScroll('a[href*="#"]');</script>
 </html>
