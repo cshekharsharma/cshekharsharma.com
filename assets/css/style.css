@@ -10,6 +10,11 @@ body {
   overflow-x: hidden;
 }
 
+textarea {
+  resize:none;
+  height:100px !important;
+}
+
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
@@ -91,7 +96,9 @@ p {
   color: #000;
 }
 
-
+.m-r-10 {
+  margin-right: 10px !important;
+}
 
 html{
   -webkit-font-smoothing: antialiased;
@@ -218,7 +225,7 @@ footer {
     }
 
     .custom-navbar .nav li a {
-      font-size: 14px;
+      font-size: 15px;
       color: #777;
       line-height: 40px;
       padding-right: 22px;
@@ -268,7 +275,16 @@ footer {
         padding: 0px 0;
       }
 
+      @media(max-width:768px) {
+       .button-big {
+        font-size: 1em;
+        width: 2em;
+        text-align:center;
+        padding: 0.15em 0em 0.15em 0em;
+      }
     }
+
+  }
 
 
 
@@ -396,17 +412,16 @@ footer {
       height: 50px;
     }
 
-    #contact input[type="submit"] {
+    #contact .btnSub {
       border: 2px solid #333;
       border-radius: 20px;
       color: #333;
       height:45px;
-      width:55%;
       /*font-family: 'Playfair Display', sans-serif;*/
       padding-bottom: 10px;
     }
 
-    #contact input[type="submit"]:hover {
+    #contact .btnSub:hover {
       background: #333;
       color: #ffffff;
     }
@@ -729,7 +744,7 @@ footer {
     100% {
       background-color: #720e9e;
       border: 1px solid #720e9e;
-      color: #fff;
+       color: #fff;
     }
   }
   @keyframes mailAnim {
@@ -748,4 +763,4 @@ footer {
   {
     color: #9b59b6;
     text-decoration: none;
-  }   
+  }
