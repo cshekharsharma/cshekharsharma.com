@@ -765,14 +765,3 @@ a {
   color: #9b59b6;
   text-decoration: none;
 }
-
-#supercontainer {
-  display: none;
-}
-
-.preload {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -128px 0px 0px -128px;
-}
