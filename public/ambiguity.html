@@ -1,0 +1,606 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ambiguity Management</title>
+  <meta name="description"
+    content="A practical, step-by-step guide to mastering ambiguity: diagnose the type, reduce uncertainty with the cheapest evidence, decide with clear frameworks, and execute safely with feedback loops." />
+  <link rel="stylesheet" href="./kb.css" />
+</head>
+
+<body>
+  <div class="wrap">
+    <header class="header">
+      <h1 class="title">Ambiguity Management</h1>
+      <p class="subtitle">A practical, teachable system to move from “unclear” to “clear enough” without diluting rigor.
+      </p>
+      <div class="pills" aria-label="Key themes">
+        <span class="pill">Diagnose the ambiguity type</span>
+        <span class="pill">Turn unknowns into hypotheses</span>
+        <span class="pill">Use decision frameworks</span>
+        <span class="pill">De-risk with safety controls</span>
+        <span class="pill">Execute with feedback loops</span>
+      </div>
+      <div class="meta">Last updated: 2026-02-14</div>
+    </header>
+
+    <div class="layout">
+      <nav class="toc" aria-label="Table of contents">
+        <h2>On this page</h2>
+        <a href="#overview">Overview</a>
+        <a href="#flow-diagram">Flow diagram</a>
+        <a href="#core-method">Core method (10 steps)</a>
+        <a href="#types">Ambiguity types &amp; playbooks</a>
+        <a href="#decision">Decision frameworks</a>
+        <a href="#risk">Risk &amp; safety controls</a>
+        <a href="#templates">Templates</a>
+      </nav>
+
+      <main class="main">
+        <article>
+          <section id="overview">
+            <h2>Overview</h2>
+
+            <h4>What ambiguity means</h4>
+            <p>
+              Ambiguity exists when the information needed to choose a path is incomplete, shifting, conflicting, or not
+              yet discoverable.
+              It is different from disagreement; it is a lack of clarity about the problem, constraints, success
+              criteria, or ownership.
+            </p>
+            <ul>
+              <li>Examples unclear goals, changing scope, unknown constraints, missing data, uncertain architecture,
+                fuzzy ownership.</li>
+              <li>Outcome direction + progress despite uncertainty (not “perfect certainty”).</li>
+            </ul>
+
+            <h4>What “good” looks like</h4>
+            <p class="kicker">When you’re doing this well, people can explain the “why,” the “how,” and the “safety
+              rails” in plain language.</p>
+            <ul>
+              <li>Clarity problem, success metrics, and guardrails are explicit.</li>
+              <li>Learning unknowns become hypotheses with an evidence plan.</li>
+              <li>Decisions reversible vs irreversible choices are treated differently.</li>
+              <li>Safety rollout and rollback strategies limit blast radius.</li>
+              <li>Momentum teams move in one direction with tight feedback loops.</li>
+            </ul>
+
+            <div class="callout"><strong>Teaching point:</strong> You don’t “remove” ambiguity. You reduce it where it’s
+              cheap, and manage it where it’s inevitable.</div>
+          </section>
+
+          <section id="flow-diagram">
+            <h2>Flow diagram</h2>
+            <p class="kicker">Use this as your mental checklist: name → type → core loop → playbook → decide → de-risk →
+              execute → learn.</p>
+
+            <div class="diagram" role="img" aria-label="Ambiguity management flow (text diagram)">
+              1) Start: Name the ambiguity
+              Write a 2–3 line statement of what’s unclear.
+              “We need X, but Y is unknown, Z constraints are shifting.”
+
+              2) Identify the type (pick the primary)
+              Goal • Scope • Constraints • Ownership
+              Data • Technical • Organizational
+              If multiple types apply, start with Goal → Constraints → Ownership.
+
+              3) Core loop (always the same)
+              Make unknowns explicit
+              Set success + guardrails
+              Choose 2–4 options
+              Gather cheapest evidence
+              Decide (reversible vs irreversible)
+              De-risk (blast radius + rollback)
+              Execute with feedback loops → revisit assumptions at checkpoints
+
+              4) Switch to the matching playbook
+              Each type has different pitfalls and the first “move” to regain control.
+
+              End condition: Decision recorded + safety plan + metrics to verify outcomes.
+            </div>
+
+            <div class="callout warn"><strong>Common mistake:</strong> trying to “solve” ambiguity with more meetings
+              instead of clearer questions and cheaper evidence.</div>
+          </section>
+
+          <section id="core-method">
+            <h2>Core method (10 steps)</h2>
+            <p>This is the default loop. Learn it once, then apply it everywhere. The “Type Playbooks” below adapt this
+              loop for each situation.</p>
+
+            <div class="steps" aria-label="Core method steps">
+              <div class="step">
+                <div><strong>Detect and name</strong> the ambiguity in one short statement.</div>
+              </div>
+              <div class="step">
+                <div>Convert unknowns into explicit questions + assumptions; prioritize by impact × urgency.</div>
+              </div>
+              <div class="step">
+                <div>Set ownership: one decision owner, consulted parties, and a decision deadline.</div>
+              </div>
+              <div class="step">
+                <div>Define success: primary metric(s), secondary metrics, and non-negotiable guardrails.</div>
+              </div>
+              <div class="step">
+                <div>Choose the cheapest evidence to reduce uncertainty (spike, pilot, replay traffic, interviews,
+                  instrumentation).</div>
+              </div>
+              <div class="step">
+                <div>Generate 2–4 viable options with clear trade-offs (cost, complexity, time, risk).</div>
+              </div>
+              <div class="step">
+                <div>Pick a decision framework (reversible vs irreversible; expected value; regret minimization;
+                  principles).</div>
+              </div>
+              <div class="step">
+                <div>De-risk the path with blast-radius controls (flags, canary, rollback, bulkheads, capacity caps).
+                </div>
+              </div>
+              <div class="step">
+                <div>Execute with tight feedback loops and checkpoint assumptions on a cadence.</div>
+              </div>
+              <div class="step">
+                <div>Close the loop: record the decision, outcomes, learnings, and update playbooks.</div>
+              </div>
+            </div>
+
+            <div class="callout"><strong>Practice tip:</strong> When people say “we’re blocked,” ask: “Which step are we
+              stuck on?” It instantly turns confusion into action.</div>
+          </section>
+
+          <section id="types">
+            <h2>Ambiguity types &amp; playbooks</h2>
+            <p class="kicker">For each type: symptoms → first move → step-by-step path → pitfalls → solutions.</p>
+
+            <details open>
+              <summary>Type A: Goal ambiguity</summary>
+              <div class="grid2">
+                <div class="card">
+                  <h4>Symptoms</h4>
+                  <ul>
+                    <li>Different people optimize for different outcomes (growth vs quality vs cost).</li>
+                    <li>“Success” changes weekly or is never stated clearly.</li>
+                    <li>Meetings produce tasks, but not decisions.</li>
+                  </ul>
+                  <h4>First move</h4>
+                  <ul>
+                    <li>Force a Goal Hierarchy: Primary metric + Guardrails + Secondary metrics.</li>
+                    <li>Write the “definition of success” in one paragraph and circulate it.</li>
+                  </ul>
+                </div>
+                <div class="card">
+                  <h4>Step-by-step path</h4>
+                  <ol>
+                    <li>Ask for outcomes, not features: “What user/business change must happen?”</li>
+                    <li>Pick one primary metric; define guardrails (SLO, compliance, budget caps).</li>
+                    <li>Declare trade-offs: what you will sacrifice if needed (speed vs quality, cost vs latency).</li>
+                    <li>Anchor decisions to the hierarchy in every review.</li>
+                    <li>Instrument leading indicators so learning happens quickly.</li>
+                  </ol>
+                </div>
+              </div>
+              <div class="grid2">
+                <div class="card">
+                  <h4>Common pitfalls</h4>
+                  <ul>
+                    <li>“Optimize everything” → no real trade-offs → hidden conflict later.</li>
+                    <li>Metric soup (too many KPIs) → teams choose convenient metrics.</li>
+                    <li>Unowned metrics → no accountability and slow corrections.</li>
+                  </ul>
+                </div>
+                <div class="card">
+                  <h4>Solutions</h4>
+                  <ul>
+                    <li>Write a one-slide goal hierarchy; use it as the “tie-breaker.”</li>
+                    <li>Assign metric owners and review cadence (weekly outcomes, not statuses).</li>
+                    <li>Convert vague goals into measurable targets with time bounds.</li>
+                  </ul>
+                </div>
+              </div>
+            </details>
+
+            <details>
+              <summary>Type B: Scope ambiguity</summary>
+              <div class="grid2">
+                <div class="card">
+                  <h4>Symptoms</h4>
+                  <ul>
+                    <li>Requirements expand continuously (“just one more thing”).</li>
+                    <li>Delivery timelines slip without clear reason.</li>
+                    <li>Hidden dependencies appear late.</li>
+                  </ul>
+                  <h4>First move</h4>
+                  <ul>
+                    <li>Create an explicit In / Out scope list with versioning (v1, v1.1, v2).</li>
+                    <li>Introduce a change budget: new scope consumes time/cost or displaces work.</li>
+                  </ul>
+                </div>
+                <div class="card">
+                  <h4>Step-by-step path</h4>
+                  <ol>
+                    <li>Define the thin slice that achieves the primary outcome.</li>
+                    <li>List exclusions explicitly (what will not be done in this release).</li>
+                    <li>Map dependencies and “unknown unknowns” early via discovery.</li>
+                    <li>Use impact vs effort to prioritize; defer low impact / high effort.</li>
+                    <li>Enforce change control: scope change requires trade-off discussion.</li>
+                  </ol>
+                </div>
+              </div>
+              <div class="grid2">
+                <div class="card">
+                  <h4>Common pitfalls</h4>
+                  <ul>
+                    <li>No explicit exclusions → stakeholders assume everything is included.</li>
+                    <li>Hidden coupling discovered late → large rework.</li>
+                    <li>“MVP” confusion → MVP becomes “mini-full-product.”</li>
+                  </ul>
+                </div>
+                <div class="card">
+                  <h4>Solutions</h4>
+                  <ul>
+                    <li>Publish a scope tracker with R/Y/G status per feature.</li>
+                    <li>Lock a baseline scope; treat changes as a budgeted decision.</li>
+                    <li>Run short spikes to uncover dependencies before committing.</li>
+                  </ul>
+                </div>
+              </div>
+            </details>
+
+            <details>
+              <summary>Type C: Constraint ambiguity</summary>
+              <div class="grid2">
+                <div class="card">
+                  <h4>Symptoms</h4>
+                  <ul>
+                    <li>Unclear SLO/SLA targets (latency, uptime, throughput).</li>
+                    <li>Budget constraints are not defined or change suddenly.</li>
+                    <li>Compliance/security expectations are assumed, not verified.</li>
+                  </ul>
+                  <h4>First move</h4>
+                  <ul>
+                    <li>Build a Constraint Matrix and separate hard vs soft constraints.</li>
+                    <li>Run a quick “stress test” workshop: “What if scale doubles?”</li>
+                  </ul>
+                </div>
+                <div class="card">
+                  <h4>Step-by-step path</h4>
+                  <ol>
+                    <li>List constraints (time, budget, reliability, security, compliance, operational limits).</li>
+                    <li>Classify: hard constraints (non-negotiable) vs soft (tradeable).</li>
+                    <li>Validate constraints with domain owners (security/legal/finance/ops).</li>
+                    <li>Model scenarios: optimistic / expected / pessimistic; pick design guardrails.</li>
+                    <li>Design within constraints and document trade-offs explicitly.</li>
+                  </ol>
+                </div>
+              </div>
+              <div class="grid2">
+                <div class="card">
+                  <h4>Common pitfalls</h4>
+                  <ul>
+                    <li>Optimistic assumptions → the system fails under real load.</li>
+                    <li>Compliance discovered late → forced redesign.</li>
+                    <li>Cost surprises → emergency cuts that harm reliability.</li>
+                  </ul>
+                </div>
+                <div class="card">
+                  <h4>Solutions</h4>
+                  <ul>
+                    <li>Conservative capacity planning; build headroom into SLO targets.</li>
+                    <li>Bring compliance/security early into discovery and reviews.</li>
+                    <li>Track cost as a first-class metric; add budget guardrails to reviews.</li>
+                  </ul>
+                </div>
+              </div>
+            </details>
+
+            <details>
+              <summary>Type D: Ownership ambiguity</summary>
+              <div class="grid2">
+                <div class="card">
+                  <h4>Symptoms</h4>
+                  <ul>
+                    <li>Repeated “I thought they owned it” moments.</li>
+                    <li>Duplicated work or critical work falling through gaps.</li>
+                    <li>Slow decisions because “everyone needs to align.”</li>
+                  </ul>
+                  <h4>First move</h4>
+                  <ul>
+                    <li>Assign one decision owner and publish a lightweight RACI.</li>
+                    <li>Define escalation rules and time limits (“if no agreement in 24h, owner decides”).</li>
+                  </ul>
+                </div>
+                <div class="card">
+                  <h4>Step-by-step path</h4>
+                  <ol>
+                    <li>Map ownership for decisions and execution separately (they can differ).</li>
+                    <li>Declare interfaces between teams (APIs, SLAs, on-call boundaries).</li>
+                    <li>Define decision cadence and escalation triggers.</li>
+                    <li>Reduce shared ownership (shared execution is fine; shared accountability is risky).</li>
+                    <li>Review quarterly as scope and org structure changes.</li>
+                  </ol>
+                </div>
+              </div>
+              <div class="grid2">
+                <div class="card">
+                  <h4>Common pitfalls</h4>
+                  <ul>
+                    <li>Consensus dependency → decisions never land.</li>
+                    <li>Dual accountability → both teams assume the other will do it.</li>
+                    <li>Unclear escalations → issues turn into urgent escalations.</li>
+                  </ul>
+                </div>
+                <div class="card">
+                  <h4>Solutions</h4>
+                  <ul>
+                    <li>Single-threaded decision owner per domain.</li>
+                    <li>Publish ownership map and “who decides what” table.</li>
+                    <li>Standardize handoffs and incident responsibilities.</li>
+                  </ul>
+                </div>
+              </div>
+            </details>
+
+            <details>
+              <summary>Type E: Data ambiguity</summary>
+              <div class="grid2">
+                <div class="card">
+                  <h4>Symptoms</h4>
+                  <ul>
+                    <li>Dashboards disagree; “the numbers don’t match.”</li>
+                    <li>Decisions made on anecdotes or loudest voice.</li>
+                    <li>Signals are lagging; teams wait weeks for results.</li>
+                  </ul>
+                  <h4>First move</h4>
+                  <ul>
+                    <li>Establish a single source of truth and validate instrumentation.</li>
+                    <li>Separate leading vs lagging indicators; rely on leading indicators for iteration.</li>
+                  </ul>
+                </div>
+                <div class="card">
+                  <h4>Step-by-step path</h4>
+                  <ol>
+                    <li>Audit measurement: definitions, sampling, missing events, time windows.</li>
+                    <li>Pick the decision metric and document its definition.</li>
+                    <li>Create hypotheses and run controlled tests (pilot, canary, A/B).</li>
+                    <li>Set decision deadlines even if data is imperfect; record assumptions.</li>
+                    <li>Improve telemetry so future cycles are faster and cleaner.</li>
+                  </ol>
+                </div>
+              </div>
+              <div class="grid2">
+                <div class="card">
+                  <h4>Common pitfalls</h4>
+                  <ul>
+                    <li>Cherry-picking data to support a preferred outcome.</li>
+                    <li>False precision (over-scoring with weak data).</li>
+                    <li>Ignoring qualitative signals (customer pain, operational pain).</li>
+                  </ul>
+                </div>
+                <div class="card">
+                  <h4>Solutions</h4>
+                  <ul>
+                    <li>Use a shared metric dictionary; lock definitions for the decision cycle.</li>
+                    <li>Run experiments; prefer evidence over debate.</li>
+                    <li>Combine data + qualitative input; reconcile conflicting signals explicitly.</li>
+                  </ul>
+                </div>
+              </div>
+            </details>
+
+            <details>
+              <summary>Type F: Technical ambiguity</summary>
+              <div class="grid2">
+                <div class="card">
+                  <h4>Symptoms</h4>
+                  <ul>
+                    <li>Multiple plausible architectures; unclear scaling limits.</li>
+                    <li>Build vs buy uncertainty; lock-in risk.</li>
+                    <li>Performance vs complexity trade-offs are unclear.</li>
+                  </ul>
+                  <h4>First move</h4>
+                  <ul>
+                    <li>Classify the choice as reversible vs irreversible.</li>
+                    <li>Run a short technical spike (benchmark, load test, cost model).</li>
+                  </ul>
+                </div>
+                <div class="card">
+                  <h4>Step-by-step path</h4>
+                  <ol>
+                    <li>Define non-negotiables (latency, uptime, data safety, operational simplicity).</li>
+                    <li>List 2–4 options and document trade-offs (cost, complexity, operability).</li>
+                    <li>Prototype the risky part (the unknown that can kill the plan).</li>
+                    <li>Choose a default using principles (“operability-first”, “backward compatible”).</li>
+                    <li>Build escape hatches (feature flags, modular boundaries, migration plans).</li>
+                  </ol>
+                </div>
+              </div>
+              <div class="grid2">
+                <div class="card">
+                  <h4>Common pitfalls</h4>
+                  <ul>
+                    <li>Over-engineering for hypothetical future scale.</li>
+                    <li>Ego-driven design (cleanest vs simplest workable).</li>
+                    <li>Ignoring ops burden (hard to run beats hard to build).</li>
+                  </ul>
+                </div>
+                <div class="card">
+                  <h4>Solutions</h4>
+                  <ul>
+                    <li>Ask “what breaks first?” and validate that with tests.</li>
+                    <li>Quantify complexity cost (on-call load, deploy risk, cognitive load).</li>
+                    <li>Prefer reversible decisions; isolate irreversible ones behind stable interfaces.</li>
+                  </ul>
+                </div>
+              </div>
+            </details>
+
+            <details>
+              <summary>Type G: Organizational ambiguity</summary>
+              <div class="grid2">
+                <div class="card">
+                  <h4>Symptoms</h4>
+                  <ul>
+                    <li>Roadmaps conflict or change frequently.</li>
+                    <li>Re-orgs create unclear boundaries and priorities.</li>
+                    <li>Teams drift into duplicate or misaligned work.</li>
+                  </ul>
+                  <h4>First move</h4>
+                  <ul>
+                    <li>Establish a North Star and a small set of strategic bets.</li>
+                    <li>Align team boundaries and governance cadence to that strategy.</li>
+                  </ul>
+                </div>
+                <div class="card">
+                  <h4>Step-by-step path</h4>
+                  <ol>
+                    <li>Clarify priorities: top bets, what to stop, and what “good” looks like this quarter.</li>
+                    <li>Align structure to strategy: define domains, interfaces, and platform vs product ownership.</li>
+                    <li>Create governance cadence: planning rhythm, risk reviews, architecture reviews.</li>
+                    <li>Stabilize processes long enough for feedback loops to work.</li>
+                    <li>Communicate transparently: decision rationale + what changes for each team.</li>
+                  </ol>
+                </div>
+              </div>
+              <div class="grid2">
+                <div class="card">
+                  <h4>Common pitfalls</h4>
+                  <ul>
+                    <li>Thrash (constant re-prioritization) → morale drop + delivery failure.</li>
+                    <li>Over-centralization → slow decisions.</li>
+                    <li>Over-autonomy → fragmentation and incompatible solutions.</li>
+                  </ul>
+                </div>
+                <div class="card">
+                  <h4>Solutions</h4>
+                  <ul>
+                    <li>Freeze priorities for a defined window; use change control.</li>
+                    <li>Use clear decision rights: what’s local vs what’s shared.</li>
+                    <li>Set shared standards (APIs, SLOs, observability) to prevent fragmentation.</li>
+                  </ul>
+                </div>
+              </div>
+            </details>
+          </section>
+
+          <section id="decision">
+            <h2>Decision frameworks</h2>
+            <p class="kicker">Use these to make decisions feel principled (not personal) and to avoid relitigating
+              later.</p>
+
+            <details open>
+              <summary>Reversible vs irreversible</summary>
+              <ul>
+                <li>Reversible decide quickly; learn via experiment; keep rollback ready.</li>
+                <li>Irreversible demand evidence; do reviews; confirm constraints; log rationale.</li>
+                <li>Use when architecture, data models, compliance boundaries, vendor lock-in.</li>
+              </ul>
+            </details>
+
+            <details>
+              <summary>Expected value + risk</summary>
+              <ul>
+                <li>Score options by Impact × Probability minus Cost.</li>
+                <li>Adjust for risk by adding a “blast radius” multiplier.</li>
+                <li>Use when multiple viable paths and you need a transparent choice.</li>
+              </ul>
+            </details>
+
+            <details>
+              <summary>Regret minimization</summary>
+              <ul>
+                <li>Ask: “In 12 months, which choice would we regret less if it fails?”</li>
+                <li>Use when data is weak but a decision is required.</li>
+              </ul>
+            </details>
+
+            <details>
+              <summary>Principle-based</summary>
+              <ul>
+                <li>Define principles (e.g., operability-first, customer safety first, backward compatible).</li>
+                <li>Use principles as tie-breakers and to reduce politics.</li>
+                <li>Use when high emotion or repeated debates.</li>
+              </ul>
+            </details>
+          </section>
+
+          <section id="risk">
+            <h2>Risk &amp; safety controls</h2>
+            <p>Ambiguity management is incomplete without safety mechanisms that limit damage and enable rapid learning.
+            </p>
+
+            <div class="grid2">
+              <div class="card">
+                <h4>Blast radius controls</h4>
+                <ul>
+                  <li>Feature flags</li>
+                  <li>Canary rollouts</li>
+                  <li>Shadow traffic</li>
+                  <li>Rate limits</li>
+                  <li>Bulkheads</li>
+                </ul>
+              </div>
+              <div class="card">
+                <h4>Rollback &amp; recovery</h4>
+                <ul>
+                  <li>Kill switches</li>
+                  <li>Backwards-compatible schema changes</li>
+                  <li>Data migration plans</li>
+                  <li>Runbooks</li>
+                  <li>Incident drills</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="card" style="margin-top:12px">
+              <h4>Verification</h4>
+              <ul>
+                <li>Leading indicators</li>
+                <li>Error budgets</li>
+                <li>SLO dashboards</li>
+                <li>Alert thresholds</li>
+                <li>Post-launch reviews</li>
+              </ul>
+              <p class="kicker">Rule of thumb: if the decision is hard to reverse, invest more in validation and safety
+                up front.</p>
+            </div>
+          </section>
+
+          <section id="templates">
+            <h2>Templates</h2>
+
+            <div class="card">
+              <h4>Ambiguity statement</h4>
+              <p>
+                <code>“We need X outcome, but Y is unknown and Z constraints are shifting. We will decide by DATE using FRAMEWORK and validate via EVIDENCE.”</code>
+              </p>
+            </div>
+
+            <div class="card" style="margin-top:12px">
+              <h4>Decision record (one page)</h4>
+              <ul>
+                <li><strong>Context:</strong> what’s changing and why now?</li>
+                <li><strong>Options:</strong> 2–4 viable paths + trade-offs.</li>
+                <li><strong>Decision:</strong> what we chose and why.</li>
+                <li><strong>Assumptions:</strong> what must be true.</li>
+                <li><strong>Safety:</strong> rollout, rollback, blast radius controls.</li>
+                <li><strong>Metrics:</strong> how we’ll know it’s working.</li>
+                <li><strong>Follow-ups:</strong> what to revisit and when.</li>
+              </ul>
+            </div>
+
+            <div class="callout" style="margin-top:12px">
+              <strong>How to practice:</strong> Pick one real situation. Identify the type. Run the 10-step loop. Write
+              a one-page decision record. Review outcomes after one week.
+            </div>
+          </section>
+
+          <div class="footer"></div>
+        </article>
+      </main>
+    </div>
+  </div>
+</body>
+
+</html>

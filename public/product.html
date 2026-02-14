@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Product Leadership & Product Thinking</title>
+  <meta name="description"
+    content="A practical system for product leadership: outcome-first thinking, decision frameworks, prioritization, stakeholder alignment, and execution governance." />
+  <link rel="stylesheet" href="./kb.css" />
+</head>
+
+<body>
+  <div class="wrap">
+    <header class="header">
+      <h1 class="title">Product Leadership & Product Thinking</h1>
+      <p class="subtitle">A teachable, end-to-end system for building the right thing, making principled decisions, and
+        driving measurable impact.</p>
+      <div class="pills" aria-label="Key themes">
+        <span class="pill">Outcome-first thinking</span>
+        <span class="pill">Customer + business clarity</span>
+        <span class="pill">Prioritization with trade-offs</span>
+        <span class="pill">Decision frameworks</span>
+        <span class="pill">Execution governance</span>
+        <span class="pill">Impact measurement</span>
+      </div>
+      <div class="meta">Last updated: 2026-02-14</div>
+    </header>
+
+    <div class="layout">
+      <nav class="toc" aria-label="Table of contents">
+        <h2>On this page</h2>
+        <a href="#north-star">North Star</a>
+        <a href="#principles">Operating principles</a>
+        <a href="#loop">Core loop (12 steps)</a>
+        <a href="#problem">Problem framing</a>
+        <a href="#value">Value &amp; strategy mapping</a>
+        <a href="#prioritization">Prioritization</a>
+        <a href="#decisions">Decision frameworks</a>
+        <a href="#alignment">Stakeholder alignment</a>
+        <a href="#execution">Execution &amp; governance</a>
+        <a href="#metrics">Metrics &amp; experimentation</a>
+        <a href="#risk">Risk, quality, and safety</a>
+        <a href="#templates">Templates</a>
+      </nav>
+
+      <main class="main">
+        <article>
+          <section id="north-star">
+            <h2>North Star</h2>
+            <p>
+              Product leadership is the skill of repeatedly turning ambiguity into measurable outcomes:
+              <strong>choose the right problems</strong>, <strong>design the simplest effective solution</strong>,
+              <strong>align people around trade-offs</strong>, and <strong>deliver impact with quality and
+                learning</strong>.
+            </p>
+            <div class="callout">
+              <strong>Teaching point:</strong> A strong product thinker does not chase features. They chase outcomes,
+              and treat features as hypotheses.
+            </div>
+
+            <div class="grid2">
+              <div class="card">
+                <h4>What “good” looks like</h4>
+                <ul>
+                  <li>Clear problem statement with measurable success criteria.</li>
+                  <li>Ability to explain trade-offs (not just preferences).</li>
+                  <li>Priorities reflect value, risk, and constraints — not noise.</li>
+                  <li>Decisions are documented and revisited with evidence.</li>
+                  <li>Delivery is predictable, safe, and continuously improving.</li>
+                </ul>
+              </div>
+              <div class="card">
+                <h4>Common failure modes</h4>
+                <ul>
+                  <li>Shipping outputs without outcomes (“feature factory”).</li>
+                  <li>Priority churn; roadmap changes weekly.</li>
+                  <li>No explicit success metrics → debate never ends.</li>
+                  <li>Stakeholders “aligned” in meetings but not in execution.</li>
+                  <li>Quality and ops sacrificed; the platform becomes brittle.</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section id="principles">
+            <h2>Operating principles</h2>
+            <p class="kicker">These principles act as tie-breakers when decisions get hard.</p>
+            <div class="grid2">
+              <div class="card">
+                <ul>
+                  <li><strong>Outcome-first:</strong> define the change you want in the world, then choose the smallest
+                    action that can cause it.</li>
+                  <li><strong>Customer reality:</strong> treat customer pain as data; confirm with evidence, not
+                    assumptions.</li>
+                  <li><strong>Clarity over consensus:</strong> align on goals + decision rights, not on everyone
+                    “liking” the decision.</li>
+                  <li><strong>Speed with safety:</strong> move fast using guardrails (flags, canaries, rollbacks), not
+                    by skipping rigor.</li>
+                </ul>
+              </div>
+              <div class="card">
+                <ul>
+                  <li><strong>Trade-offs are mandatory:</strong> if nothing is sacrificed, priorities are not real.</li>
+                  <li><strong>Evidence over debate:</strong> when uncertain, design the cheapest proof.</li>
+                  <li><strong>Whole-system thinking:</strong> optimize for long-term operability, not local wins.</li>
+                  <li><strong>Learn in loops:</strong> ship, measure, learn, and adjust — repeatedly.</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section id="loop">
+            <h2>Core loop (12 steps)</h2>
+            <p>This is the repeatable workflow for product thinking, prioritization, and decision-making.</p>
+
+            <div class="steps" aria-label="Core product leadership loop">
+              <div class="step">
+                <div><strong>Define the outcome:</strong> what user/business change must happen?</div>
+              </div>
+              <div class="step">
+                <div><strong>Frame the problem:</strong> who is impacted, what pain, why now?</div>
+              </div>
+              <div class="step">
+                <div><strong>Set success metrics + guardrails:</strong> primary metric, secondary metrics,
+                  non-negotiables.</div>
+              </div>
+              <div class="step">
+                <div><strong>Map constraints:</strong> time, budget, reliability, compliance, capacity, dependencies.
+                </div>
+              </div>
+              <div class="step">
+                <div><strong>Discover root cause:</strong> data + qualitative input; avoid “symptom fixes.”</div>
+              </div>
+              <div class="step">
+                <div><strong>Generate options:</strong> 2–4 viable approaches with explicit trade-offs.</div>
+              </div>
+              <div class="step">
+                <div><strong>Estimate value:</strong> impact magnitude × likelihood; identify who benefits and who pays.
+                </div>
+              </div>
+              <div class="step">
+                <div><strong>Prioritize:</strong> choose a ranking method and make trade-offs explicit.</div>
+              </div>
+              <div class="step">
+                <div><strong>Decide:</strong> pick a decision mechanism based on reversibility + blast radius.</div>
+              </div>
+              <div class="step">
+                <div><strong>De-risk:</strong> ship with safety rails (flags, canary, rollback, SLO monitoring).</div>
+              </div>
+              <div class="step">
+                <div><strong>Execute:</strong> milestones, owners, dependencies, governance cadence.</div>
+              </div>
+              <div class="step">
+                <div><strong>Measure &amp; learn:</strong> evaluate outcomes; iterate or stop; document learnings.</div>
+              </div>
+            </div>
+
+            <div class="callout"><strong>Practice tip:</strong> If a plan feels messy, ask: “Which step did we skip?”
+            </div>
+          </section>
+
+          <section id="problem">
+            <h2>Problem framing</h2>
+            <div class="grid2">
+              <div class="card">
+                <h4>Minimum problem statement</h4>
+                <ul>
+                  <li><strong>User:</strong> who is experiencing the issue?</li>
+                  <li><strong>Pain:</strong> what’s broken / slow / confusing?</li>
+                  <li><strong>Impact:</strong> what does it cost (time, money, risk, trust)?</li>
+                  <li><strong>Evidence:</strong> what data or observations support it?</li>
+                  <li><strong>Why now:</strong> what changed? what’s the urgency?</li>
+                </ul>
+              </div>
+              <div class="card">
+                <h4>Root-cause checklist</h4>
+                <ul>
+                  <li>Is it a <strong>product</strong> issue (UX, missing capability, unclear workflow)?</li>
+                  <li>Is it a <strong>platform</strong> issue (reliability, latency, scalability, operability)?</li>
+                  <li>Is it a <strong>process</strong> issue (handoffs, governance, unclear ownership)?</li>
+                  <li>Is it a <strong>market</strong> issue (positioning, pricing, competition)?</li>
+                </ul>
+              </div>
+            </div>
+
+            <details>
+              <summary>Common framing mistakes</summary>
+              <ul>
+                <li>Starting with a solution (“We should build X”) instead of a problem (“Users can’t do Y”).</li>
+                <li>Ignoring segment differences (new users vs power users behave differently).</li>
+                <li>Using vanity metrics without guardrails (growth at the cost of trust).</li>
+                <li>Not stating exclusions (scope expands by default).</li>
+              </ul>
+            </details>
+          </section>
+
+          <section id="value">
+            <h2>Value &amp; strategy mapping</h2>
+            <p class="kicker">A priority is “strategic” only if you can explain how it connects to outcomes and
+              constraints.</p>
+
+            <div class="card">
+              <h4>Strategy map (simple)</h4>
+              <ul>
+                <li><strong>North Star:</strong> the long-term outcome you optimize for.</li>
+                <li><strong>Strategic bets:</strong> 2–5 focus areas that move the North Star.</li>
+                <li><strong>Mechanisms:</strong> the repeatable ways you win (e.g., reliability, distribution, workflow
+                  depth).</li>
+                <li><strong>Initiatives:</strong> the projects/features that implement mechanisms.</li>
+                <li><strong>Metrics:</strong> how you measure movement at each layer.</li>
+              </ul>
+            </div>
+
+            <div class="grid2" style="margin-top:12px">
+              <div class="card">
+                <h4>Value types to recognize</h4>
+                <ul>
+                  <li><strong>Revenue:</strong> conversion, retention, upsell.</li>
+                  <li><strong>Cost:</strong> infra cost, support load, manual ops.</li>
+                  <li><strong>Risk:</strong> security, compliance, data integrity.</li>
+                  <li><strong>Trust:</strong> reliability, quality, correctness.</li>
+                  <li><strong>Speed:</strong> time-to-value for users and teams.</li>
+                </ul>
+              </div>
+              <div class="card">
+                <h4>Value clarity questions</h4>
+                <ul>
+                  <li>Which metric moves, by how much, and for which segment?</li>
+                  <li>What is the confidence level, and what evidence supports it?</li>
+                  <li>Who benefits immediately, and who pays (engineering/ops/support)?</li>
+                  <li>What is the opportunity cost (what we won’t do)?</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section id="prioritization">
+            <h2>Prioritization</h2>
+            <p>
+              Prioritization is not “ranking ideas.” It is the act of making trade-offs visible and defensible.
+              Use one method per planning cycle to avoid chaos.
+            </p>
+
+            <details open>
+              <summary>Method 1: RICE (Reach, Impact, Confidence, Effort)</summary>
+              <ul>
+                <li><strong>Use when:</strong> you need a transparent scoring model across many items.</li>
+                <li><strong>Formula:</strong> (Reach × Impact × Confidence) / Effort.</li>
+                <li><strong>Guardrail:</strong> don’t let false precision win; use ranges and sensitivity checks.</li>
+              </ul>
+            </details>
+
+            <details>
+              <summary>Method 2: Impact vs Effort (with risk overlay)</summary>
+              <ul>
+                <li><strong>Use when:</strong> quick planning with limited data.</li>
+                <li>Add a third dimension: <strong>risk/blast radius</strong> to prevent “easy but dangerous” wins.</li>
+              </ul>
+            </details>
+
+            <details>
+              <summary>Method 3: Cost of Delay / WSJF (Weighted Shortest Job First)</summary>
+              <ul>
+                <li><strong>Use when:</strong> sequencing matters and delays are expensive.</li>
+                <li><strong>Concept:</strong> prioritize what becomes more costly the longer you wait.</li>
+              </ul>
+            </details>
+
+            <details>
+              <summary>Method 4: Must/Should/Could/Won't (MoSCoW) for scope control</summary>
+              <ul>
+                <li><strong>Use when:</strong> scope ambiguity is high and timelines are fixed.</li>
+                <li><strong>Rule:</strong> “Must” items should fit in ~60% of capacity, leaving room for unknowns.</li>
+              </ul>
+            </details>
+
+            <div class="callout warn"><strong>Common mistake:</strong> A scoring model that ignores operational burden
+              will create a brittle system over time.</div>
+          </section>
+
+          <section id="decisions">
+            <h2>Decision frameworks</h2>
+            <p class="kicker">Use frameworks to make decisions feel principled and repeatable — not personal.</p>
+
+            <details open>
+              <summary>Reversible vs irreversible (Type 2 vs Type 1)</summary>
+              <ul>
+                <li><strong>Reversible:</strong> decide fast; test; iterate; keep rollback.</li>
+                <li><strong>Irreversible:</strong> gather evidence; do reviews; document rationale; define guardrails.
+                </li>
+              </ul>
+            </details>
+
+            <details>
+              <summary>Expected value + risk</summary>
+              <ul>
+                <li>Compare options by expected impact minus cost, adjusted by risk and blast radius.</li>
+                <li>Useful when multiple paths are viable and you need transparency.</li>
+              </ul>
+            </details>
+
+            <details>
+              <summary>Regret minimization</summary>
+              <ul>
+                <li>Ask: “In 12–18 months, which choice would we regret less if it fails?”</li>
+                <li>Useful when evidence is weak but a decision is required.</li>
+              </ul>
+            </details>
+
+            <details>
+              <summary>Principle-based tie-breakers</summary>
+              <ul>
+                <li>Define principles (e.g., safety first, operability first, user trust first).</li>
+                <li>Use principles as stable tie-breakers to reduce politics.</li>
+              </ul>
+            </details>
+
+            <div class="card" style="margin-top:12px">
+              <h4>Decision record (minimum)</h4>
+              <ul>
+                <li><strong>Context</strong> (what’s changing and why)</li>
+                <li><strong>Options</strong> (2–4) + trade-offs</li>
+                <li><strong>Decision</strong> + rationale</li>
+                <li><strong>Assumptions</strong></li>
+                <li><strong>Safety plan</strong> (rollout/rollback)</li>
+                <li><strong>Metrics</strong> (how we know)</li>
+                <li><strong>Revisit date</strong></li>
+              </ul>
+            </div>
+          </section>
+
+          <section id="alignment">
+            <h2>Stakeholder alignment</h2>
+            <p>Alignment is achieved when everyone understands the decision, the trade-offs, and the next actions — even
+              if not everyone prefers the outcome.</p>
+
+            <div class="grid2">
+              <div class="card">
+                <h4>Alignment mechanics</h4>
+                <ul>
+                  <li>Share a single decision doc, not scattered messages.</li>
+                  <li>Make trade-offs explicit: “We choose A over B because…”.</li>
+                  <li>Define decision rights (owner/DRI) and escalation rules.</li>
+                  <li>Timebox debate; set a decision deadline.</li>
+                </ul>
+              </div>
+              <div class="card">
+                <h4>Conflict-aware alignment</h4>
+                <ul>
+                  <li>Separate “facts” from “preferences.”</li>
+                  <li>Ask: “What would change your mind?” to surface evidence gaps.</li>
+                  <li>Watch for incentive mismatch (one party benefits, another pays).</li>
+                  <li>Close with commitment: owners, milestones, metrics.</li>
+                </ul>
+              </div>
+            </div>
+
+            <details>
+              <summary>Signals you have real alignment</summary>
+              <ul>
+                <li>People can explain the decision in the same words.</li>
+                <li>Downstream teams behave consistently without extra nudging.</li>
+                <li>Escalations reduce; fewer “surprise objections” later.</li>
+              </ul>
+            </details>
+          </section>
+
+          <section id="execution">
+            <h2>Execution &amp; governance</h2>
+            <p class="kicker">Good strategy fails without good execution. Governance exists to keep work aligned and
+              safe — not to create bureaucracy.</p>
+
+            <div class="grid2">
+              <div class="card">
+                <h4>Execution basics</h4>
+                <ul>
+                  <li>Break work into milestones with clear owners.</li>
+                  <li>Track dependencies explicitly; identify critical path.</li>
+                  <li>Define scope boundaries; manage change via trade-offs.</li>
+                  <li>Use “definition of done” (quality + docs + monitoring).</li>
+                </ul>
+              </div>
+              <div class="card">
+                <h4>Governance cadence (simple)</h4>
+                <ul>
+                  <li><strong>Weekly:</strong> outcomes + risks (not status theater).</li>
+                  <li><strong>Biweekly:</strong> roadmap adjustments with a change budget.</li>
+                  <li><strong>Monthly:</strong> deep dive on metrics, quality, ops load.</li>
+                  <li><strong>Quarterly:</strong> strategy refresh and stop-doing decisions.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="callout warn"><strong>Anti-pattern:</strong> Reviews that only ask “are we on track?” instead of
+              “are we building the right thing and learning fast enough?”</div>
+          </section>
+
+          <section id="metrics">
+            <h2>Metrics &amp; experimentation</h2>
+            <div class="grid2">
+              <div class="card">
+                <h4>Metric types</h4>
+                <ul>
+                  <li><strong>North Star metric:</strong> long-term value creation.</li>
+                  <li><strong>Input metrics:</strong> leading indicators you can control.</li>
+                  <li><strong>Output metrics:</strong> adoption, usage, conversion.</li>
+                  <li><strong>Quality guardrails:</strong> latency, error rate, churn, trust.</li>
+                </ul>
+              </div>
+              <div class="card">
+                <h4>Experiment ladder (choose the cheapest)</h4>
+                <ul>
+                  <li>Customer conversations / support logs</li>
+                  <li>Prototype / mock / usability test</li>
+                  <li>Instrument + observe behavior</li>
+                  <li>Shadow / canary / staged rollout</li>
+                  <li>A/B test (when feasible)</li>
+                </ul>
+              </div>
+            </div>
+
+            <details>
+              <summary>How to avoid metric manipulation</summary>
+              <ul>
+                <li>Define metric ownership and exact definitions (metric dictionary).</li>
+                <li>Use guardrails so you don’t “win” by breaking trust or reliability.</li>
+                <li>Track long-term effects (retention, support load, incident rate).</li>
+              </ul>
+            </details>
+          </section>
+
+          <section id="risk">
+            <h2>Risk, quality, and safety</h2>
+            <p>Strong product leadership is safe product leadership. You move fast by controlling blast radius.</p>
+
+            <div class="grid2">
+              <div class="card">
+                <h4>Safety rails</h4>
+                <ul>
+                  <li>feature flags and kill switches</li>
+                  <li>canary releases and gradual ramps</li>
+                  <li>rollbacks and backward-compatible changes</li>
+                  <li>SLO dashboards and alerting</li>
+                  <li>runbooks for failures</li>
+                </ul>
+              </div>
+              <div class="card">
+                <h4>Risk questions</h4>
+                <ul>
+                  <li>What is the worst-case impact?</li>
+                  <li>How quickly can we detect failure?</li>
+                  <li>How quickly can we roll back?</li>
+                  <li>Who is on-call / responsible when it breaks?</li>
+                  <li>What new operational burden are we creating?</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="callout"><strong>Teaching point:</strong> “Quality” is not a phase. It is a constraint you
+              design into the plan.</div>
+          </section>
+
+          <section id="templates">
+            <h2>Templates</h2>
+
+            <div class="card">
+              <h4>One-paragraph product brief</h4>
+              <p>
+                <code>“For [user/segment], the problem is [pain]. Today it causes [impact]. We believe [root cause]. We will solve it by [approach], and measure success via [primary metric] while holding [guardrails].”</code>
+              </p>
+            </div>
+
+            <div class="card" style="margin-top:12px">
+              <h4>Prioritization table (minimum columns)</h4>
+              <ul>
+                <li><strong>Item</strong></li>
+                <li><strong>Outcome</strong> (which metric moves)</li>
+                <li><strong>Reach</strong> (who benefits)</li>
+                <li><strong>Impact</strong> (magnitude)</li>
+                <li><strong>Confidence</strong> (evidence quality)</li>
+                <li><strong>Effort</strong> (time/capacity)</li>
+                <li><strong>Risk</strong> (blast radius / compliance / ops)</li>
+                <li><strong>Decision owner</strong></li>
+              </ul>
+            </div>
+
+            <div class="card" style="margin-top:12px">
+              <h4>Decision note (copy/paste)</h4>
+              <ul>
+                <li><strong>Context:</strong> …</li>
+                <li><strong>Options:</strong> A / B / C …</li>
+                <li><strong>Trade-offs:</strong> …</li>
+                <li><strong>Decision:</strong> …</li>
+                <li><strong>Assumptions:</strong> …</li>
+                <li><strong>Safety plan:</strong> flags, canary, rollback …</li>
+                <li><strong>Metrics:</strong> primary + guardrails …</li>
+                <li><strong>Revisit date:</strong> …</li>
+              </ul>
+            </div>
+
+            <div class="callout" style="margin-top:12px">
+              <strong>How to practice:</strong> Choose one initiative. Write a one-paragraph product brief. Score it
+              with RICE. Write a decision note. Then define a staged rollout plan with guardrails.
+            </div>
+          </section>
+
+          <div class="footer"></div>
+        </article>
+      </main>
+    </div>
+  </div>
+</body>
+
+</html>
